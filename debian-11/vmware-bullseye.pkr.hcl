@@ -20,7 +20,7 @@ source "vmware-iso" "debian-bullseye" {
   http_directory = "http"
   boot_command = [
         "c",
-        "linux /install.a64/vmlinuz auto=true priority=critical url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg --- quiet",
+        "linux /install.a64/vmlinuz auto=true priority=critical url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg",
         "<enter>",
         "initrd /install.a64/initrd.gz",
         "<enter>",
