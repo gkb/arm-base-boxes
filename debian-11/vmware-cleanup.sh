@@ -2,6 +2,7 @@
 
 # sudo e4defrag /
 
+# This doesn't belong in a cleanup file. Its inclusion shows bad taste.
 wget https://packages.vmware.com/tools/open-vm-tools/ovt-arm-tech-preview/Debian-10/open-vm-tools-11.2.5-2debian10.tgz
 tar -zxf open-vm-tools-11.2.5-2debian10.tgz
 sudo dpkg -i ./open-vm-tools_11.2.5-2debian10_arm64.deb
